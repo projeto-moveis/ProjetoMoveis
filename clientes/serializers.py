@@ -1,13 +1,5 @@
 from rest_framework import serializers
-from .models import (
-    Cliente,
-    Funcionario,
-    MateriaPrima,
-    Produto,
-    Pedido,
-    ItemPedido,
-    FuncionarioTemItemPedido,
-    OrdemDeProducao
+from .models import ( Cliente, Funcionario, MateriaPrima, Produto, Pedido, ItemPedido, FuncionarioTemItemPedido, OrdemDeProducao
 )
 
 class ClienteSerializer(serializers.ModelSerializer):

@@ -1,26 +1,6 @@
 from rest_framework import viewsets
-
-
-from .models import (
-    Cliente,
-    Funcionario,
-    MateriaPrima,
-    Produto,
-    Pedido,
-    ItemPedido,
-    FuncionarioTemItemPedido,
-    OrdemDeProducao
-)
-from .serializers import (
-    ClienteSerializer,
-    FuncionarioSerializer,
-    MateriaPrimaSerializer,
-    ProdutoSerializer,
-    PedidoSerializer,
-    ItemPedidoSerializer,
-    FuncionarioTemItemPedidoSerializer,  
-    OrdemDeProducaoSerializer
-)
+from .models import ( Cliente, Funcionario, MateriaPrima, Produto, Pedido, ItemPedido, FuncionarioTemItemPedido, OrdemDeProducao)
+from .serializers import ( ClienteSerializer, FuncionarioSerializer, MateriaPrimaSerializer, ProdutoSerializer, PedidoSerializer, ItemPedidoSerializer,  FuncionarioTemItemPedidoSerializer,   OrdemDeProducaoSerializer)
 
 class ClienteViewSet(viewsets.ModelViewSet):
     queryset = Cliente.objects.all()
